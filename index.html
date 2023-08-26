@@ -1,30 +1,261 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Projectes amb retràs a Moncofa</title>
+    <title>Projectes retrasats a Moncofa</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .columna {
+            flex-grow: 1;
+            padding: 20px;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #quienSom {
+            width: 20%;
+            background-color: #ff7300e2;
+        }
+
+        #contenido {
+            width: 100%;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 70%;
+            height: auto;
+        }
+
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        h2 {
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        h3{
+            font-size: 28px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        
+
+        .subrayado {
+    border-bottom: 2px solid #ff7300e2;
+    padding-bottom: 5px;
+}
+
+        
+        #contador {
+            font-size: 24px;
+            background-color: #ff7300e2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        #escola {
+            font-size: 24px;
+            background-color: #ff7300e2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        #ambulatori {
+            font-size: 24px;
+            background-color: #ff7300e2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        #centredia {
+            font-size: 24px;
+            background-color: #ff7300e2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        #redesSociales {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .icono-red-social {
+            font-size: 24px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <h1>Projectes retrasats a Moncofa </h1>
-    <p>Benvolgut a la nostra pàgina web! Ací trobaràs informació interesant sobre els projectes aturats a Moncofa.</p>
-    <p>IES PALAFANGUES.</p>
-    <img src="https://www.elperiodic.com/archivos/img/noticias/18-10/30/institut-solarg.jpg" alt="IES PALAFANGUES">
-    <div id="contador"></div>
+    <div id="quienSom" class="columna">
+        <h2>Qui som?</h2>
+        <p>Des de el grup municipal de Compromís per Moncofa hem creat aquesta pàgina web per a...</p>
+        <div id="redesSociales">
+            <a href="https://www.instagram.com/compromispermoncofa/" target="_blank" class="icono-red-social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/CompromisperMoncofa/" target="_blank" class="icono-red-social"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/CompromisMNCOFA?s=20/" target="_blank" class="icono-red-social"><i class="fab fa-twitter"></i></a>
+            <a href="https://moncofa.compromis.net/" target="_blank" class="icono-red-social"><i class="fas fa-globe"></i> </a>
+        </div>
+    </div>
+
+    <div id="contenido" class="columna">
+        <h1>Projectes retrasats a Moncofa</h1>
+        <p>Benvolgut a la nostra pàgina web! Ací trobaràs informació interesant sobre els projectes aturats a Moncofa.</p>
+        <h3>Educació</h3>
+        <h2 class="subrayado">IES PALAFANGUES.</h2>
+        <img src="institut-solarg.jpg" alt="Descripción de la imagen">
+        <p>Descripció del projecte</p>
+        <div id="contador">
+            Han passat <span id="diasContador">0</span> dies,
+            <span id="horasContador">0</span> hores,
+            <span id="minutosContador">0</span> minuts i
+            <span id="segundosContador">0</span> segons des de l'inici dels tràmits.
+        </div>
+        
+    <h2 class="subrayado">ESCOLA DE LA MAR.</h2>
+        <img src="escoladelamar.jpg" alt="Descripción de la imagen">
+        <p>Descripció del projecte</p>
+     <div id="escola">
+        Han passat <span id="diasEscola">0</span> dies,
+        <span id="horasEscola">0</span> hores,
+        <span id="minutosEscola">0</span> minuts i
+        <span id="segundosEscola">0</span> segons des de l'inici dels tràmits.
+    </div>
+    <h3>Sanitat</h3>
+<h2 class="subrayado">CENTRE DE SALUT.</h2>
+        <img src="ambulatori.jpg" alt="Descripción de la imagen">
+        <p>Descripció del projecte</p>
+        <div id="ambulatori">
+            Han passat <span id="diasAmbulatori">0</span> dies,
+            <span id="horasAmbulatori">0</span> hores,
+            <span id="minutosAmbulatori">0</span> minuts i
+            <span id="segundosAmbulatori">0</span> segons des de l'inici dels tràmits.
+        </div>
+        <h3>Inclusió</h3>
+<h2 class="subrayado">CENTRE DE DIA.</h2>
+        <img src="centre de dia.jpg" alt="Descripción de la imagen">
+        <p>Descripció del projecte</p>
+        <div id="centredia">
+            Han passat <span id="diasCentredia">0</span> dies,
+            <span id="horasCentredia">0</span> hores,
+            <span id="minutosCentredia">0</span> minuts i
+            <span id="segundosCentredia">0</span> segons des de l'inici dels tràmits.
+        </div>
+        <h3>Transport</h3>
+    </div>
+</div>
+    
     
     <script>
         function actualizarContador() {
-            const fechaEspecifica = new Date("2020-12-03");
+            const fechaEspecifica = new Date("2023-01-01");
             const fechaActual = new Date();
-            const diferencia = fechaActual - fechaEspecifica;
+            const diferenciaEnTiempo = fechaActual - fechaEspecifica;
             
-            const segundos = Math.floor(diferencia / 1000);
+            const segundos = Math.floor(diferenciaEnTiempo / 1000);
             const minutos = Math.floor(segundos / 60);
             const horas = Math.floor(minutos / 60);
             const dias = Math.floor(horas / 24);
             
-            document.getElementById("contador").innerHTML = `Han passat ${dias} dies, ${horas % 24} hores, ${minutos % 60} minuts i ${segundos % 60} segons desde la data que es van inciar els tràmits.`;
+            document.getElementById("diasContador").textContent = dias;
+            document.getElementById("horasContador").textContent = horas % 24;
+            document.getElementById("minutosContador").textContent = minutos % 60;
+            document.getElementById("segundosContador").textContent = segundos % 60;
         }
         
+        actualizarContador();
         setInterval(actualizarContador, 1000);
+    </script>
+    <script>
+        function actualizarEscola() {
+            const fechaEspecifica = new Date("2006-09-12");
+            const fechaActual = new Date();
+            const diferenciaEnTiempo = fechaActual - fechaEspecifica;
+            
+            const segundos = Math.floor(diferenciaEnTiempo / 1000);
+            const minutos = Math.floor(segundos / 60);
+            const horas = Math.floor(minutos / 60);
+            const dias = Math.floor(horas / 24);
+            
+            document.getElementById("diasEscola").textContent = dias;
+            document.getElementById("horasEscola").textContent = horas % 24;
+            document.getElementById("minutosEscola").textContent = minutos % 60;
+            document.getElementById("segundosEscola").textContent = segundos % 60;
+        }
+        
+        actualizarEscola();
+        setInterval(actualizarEscola, 1000);
+    </script>
+    <script>
+        function actualizarAmbulatori() {
+            const fechaEspecifica = new Date("2020-01-10");
+            const fechaActual = new Date();
+            const diferenciaEnTiempo = fechaActual - fechaEspecifica;
+            
+            const segundos = Math.floor(diferenciaEnTiempo / 1000);
+            const minutos = Math.floor(segundos / 60);
+            const horas = Math.floor(minutos / 60);
+            const dias = Math.floor(horas / 24);
+            
+            document.getElementById("diasAmbulatori").textContent = dias;
+            document.getElementById("horasAmbulatori").textContent = horas % 24;
+            document.getElementById("minutosAmbulatori").textContent = minutos % 60;
+            document.getElementById("segundosAmbulatori").textContent = segundos % 60;
+        }
+        
+        actualizarAmbulatori();
+        setInterval(actualizarAmbulatori, 1000);
+    </script>
+    <script>
+        function actualizarCentredia() {
+            const fechaEspecifica = new Date("2021-01-02");
+            const fechaActual = new Date();
+            const diferenciaEnTiempo = fechaActual - fechaEspecifica;
+            
+            const segundos = Math.floor(diferenciaEnTiempo / 1000);
+            const minutos = Math.floor(segundos / 60);
+            const horas = Math.floor(minutos / 60);
+            const dias = Math.floor(horas / 24);
+            
+            document.getElementById("diasCentredia").textContent = dias;
+            document.getElementById("horasCentredia").textContent = horas % 24;
+            document.getElementById("minutosCentredia").textContent = minutos % 60;
+            document.getElementById("segundosCentredia").textContent = segundos % 60;
+        }
+        
+        actualizarCentredia();
+        setInterval(actualizarCentredia, 1000);
     </script>
 </body>
 </html>
